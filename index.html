@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/pomo-favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Pomo Project</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'sm': '640px',
+          // => @media (min-width: 640px) { ... }
+
+          'md': '768px',
+          // => @media (min-width: 768px) { ... }
+
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+
+          '2xl': '1536px',
+          // => @media (min-width: 1536px) { ... }
+        },
+        extend: {
+          colors: {
+            mycolor: '#698474',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- todo : --------------------------- header here --------------------->
+
+  <header class="text-zinc-700 body-font bg-white border-0 border-slate-500">
+    <div class="container sm:flex-row flex-col flex flex-wrap items-center mx-auto ">
+      <a href="/" class="text-rose-500 text-3xl md:py-1 flex flex-col my-0">
+        <pre class="text-xl text-zinc-700 my-0">The</pre>
+        <pre class="my-0">Pomo Project</pre>
+
+      </a>
+      <nav class="mr-auto ml-20 md:py-4 flex flex-wrap items-center justify-center text-[20px]">
+        <a href="#about-us" class="mr-5 hover:text-zinc-950">About Us</a>
+        <a href="#testimonial" class="mr-5 hover:text-zinc-950">Testimonial</a>
+        <a href="#founders" class="mr-5 hover:text-zinc-950">Founders</a>
+      </nav>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Github
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <br><br><br>
+
+  <!-- todo : --------------------------- first page here --------------------->
+
+  <main class="container mx-auto text-gray-600 body-font flex px-5 md:flex-row flex-col items-center">
+    <div class="left md:basis-[45%] md:mb-0 w-5/6 mb-10">
+      <img src="./assets/main-pic.png" width="780" height="680">
+    </div>
+    <div class="right basis-[55%] md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl text-gray-900 mb-5">The Pomodoro App
+        <br class="hidden lg:inline-block ">Monitor your children
+      </h1>
+      <p class="mb-8">This is a Pomodoro Timer Clock System which also helps you to monitor your children by capturing
+        their keyboard strokes and receive the data on your mail.This is solely developed for monitoring and educational
+        purposes.Be careful and read the instructions before using the app and ensure you have filled the details
+        correctly.</p>
+      <div class="btns">
+       <a href="Pomo-Package.zip"> <button
+          class="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg">Download</button></a>
+
+      <a href="Pomo-Manual.txt" target="_blank"><button
+          class="ml-4 inline-flex text-zinc-950 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Read
+          Manual</button></a>  
+      </div>
+    </div>
+  </main>
+  <br>
+
+  <!-- todo : --------------------------- About us here --------------------->
+
+  <section id="about-us" class="h-[100vh]" style="transition: ease-in-out;">
+    <h1 class="mx-auto title-font md:text-5xl text-3xl text-center mt-10">About Us</h1>
+    <div class="max-w-[1320px] md:py-[60px] py-5 flex mx-auto sm:flex-row flex-col">
+      <div class="left-about basis-[45%] pb-10">
+        <img src="./assets/pomodoro-image.jpg" class="">
+      </div>
+      <div class="right-about basis-[55%] px-5">
+        <h1 class="text-2xl pb-3">What do we do?</h1>
+        <p class="text-[19px] py-4">
+          The Pomodoro Project aims at building systems for efficient monitoring and surveillance.Under this project we
+          aim to build both software and hardware powered devices to help the users get rid of the tension they often
+          suffer due to their absence.
+        </p>
+        <h1 class="text-2xl pb-3">Who are we?</h1>
+        <p class="text-[19px] py-4">
+          We are a group of few people who have started this project with the mission to deliver our 100% in the service
+          of the aim of our project and we will dedicate our time to this.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+<!-- todo : --------------------------- testimonials here --------------------->
+
+  <h1 class="mx-auto title-font md:text-5xl text-3xl text-center mt-10" id="testimonial">Testimonial</h1>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial"
+              class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+              src="https://dummyimage.com/302x302">
+            <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy
+              90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar
+              cronut adaptogen squid fanny pack vaporware.</p>
+            <span class="inline-block h-1 w-10 rounded bg-rose-500 mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Utkarsh Rana</h2>
+            <p class="text-gray-500">Student</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial"
+              class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+              src="https://dummyimage.com/300x300">
+            <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy
+              90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar
+              cronut adaptogen squid fanny pack vaporware.</p>
+            <span class="inline-block h-1 w-10 rounded bg-rose-500 mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Priyanshu Batham</h2>
+            <p class="text-gray-500">Student</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial"
+              class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+              src="https://dummyimage.com/305x305">
+            <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy
+              90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar
+              cronut adaptogen squid fanny pack vaporware.</p>
+            <span class="inline-block h-1 w-10 rounded bg-rose-500 mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Pratham Gupta</h2>
+            <p class="text-gray-500">Student</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+<!-- todo : --------------------------- founders here --------------------->
+
+<h1 class="mx-auto title-font md:text-5xl text-3xl text-center mt-5" id="founders">Founders</h1>
+  <section class="text-gray-600 body-font" >
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/2 md:w-full">
+          <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+            <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Srajan Saxena</h2>
+              <p class="leading-relaxed text-base">3rd year student at National Post Graduate College,Lucknow.A passionate computer science enthusiast.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2 md:w-full">
+          <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+            <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Vaibhav Shankar Mishra</h2>
+              <p class="leading-relaxed text-base">3rd year student at National Post Graduate College,Lucknow.Loves Linux and Cybersecurity.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- todo --------------------  footer here --------------------->
+
+  <footer class="text-zinc-800 body-font bg-rose-200">
+    <div class="container sm:flex-row flex-col flex flex-wrap items-center mx-auto ">
+
+      <p class="text-zinc-800 text-xl text-center mx-auto p-10">Created with ❤️ by team @ Pomo Project</p>
+    </div>
+
+  </footer>
+</body>
+
+</html>
